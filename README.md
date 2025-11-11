@@ -1,9 +1,3 @@
-تمام نوره 😅 فهمت قصدك الحين 100% — تبين كل ملف README.md كامل متكامل في نسخة وحدة بدون أي توقف أو تقطيع، بحيث تنسخينه دفعة وحدة وتلصقينه في الملف الجاهز.
-
-وهذا هو 👇 README.md كامل جاهز 100٪ — نفس تنسيق احترافي، مرتب، ومختلف شوي عشان ما يعتبر منسوخ:
-
-⸻
-
 
 # Simple Shell
 
@@ -11,7 +5,7 @@ A lightweight UNIX command interpreter written in C that mimics the essential be
 
 ---
 
-## 🧩 Overview
+## Overview
 
 This project is a basic implementation of a UNIX command-line shell.  
 It can run commands both **interactively** (prompt mode) and **non-interactively** (script or pipe mode).  
@@ -19,7 +13,7 @@ The shell handles command parsing, execution, built-in functions, and exit codes
 
 ---
 
-## ⚙️ Features
+## Features
 
 - Displays a custom shell prompt (`$`) and waits for user commands  
 - Executes commands using **absolute paths** (`/bin/ls`) or **PATH** (`ls`)  
@@ -33,7 +27,7 @@ The shell handles command parsing, execution, built-in functions, and exit codes
 
 ---
 
-## 🛠️ Compilation
+## Compilation
 
 To compile all source files and create the executable `hsh`:
 
@@ -43,7 +37,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ⸻
 
-🚀 Usage
+Usage
 
 Interactive Mode
 
@@ -64,7 +58,7 @@ $ cat commands.txt | ./hsh
 
 ⸻
 
-📁 Project Structure
+Project Structure
 
 File	Description	Key Functions
 main.h	Header file with includes and prototypes	—
@@ -79,7 +73,7 @@ README.md	Project documentation	—
 
 ⸻
 
-🧠 Main Functions
+Main Functions
 
 main.c
 	•	main() – Initializes and controls the shell loop, manages exit codes.
@@ -104,8 +98,7 @@ builtin.c
 	•	is_builtin() – Checks for built-in commands.
 
 ⸻
-
-💡 Built-in Commands
+ Built-in Commands
 
 Command	Description	Example
 exit	Exits the shell	exit
@@ -114,7 +107,7 @@ env	Prints environment variables	env
 
 ⸻
 
-🔢 Exit Status Codes
+ Exit Status Codes
 
 Code	Meaning	Example
 0	Success	Valid command executed
@@ -125,7 +118,7 @@ Code	Meaning	Example
 
 ⸻
 
-🧪 Examples
+Examples
 
 Example 1 — Basic Commands
 
@@ -153,7 +146,7 @@ total 8
 
 ⸻
 
-🧰 Memory & Process Management
+Memory & Process Management
 	•	Dynamic memory is freed before each iteration.
 	•	No leaks (valgrind clean).
 	•	Uses:
@@ -164,14 +157,14 @@ total 8
 
 ⸻
 
-🔍 PATH Handling
+PATH Handling
 	•	Does not use getenv().
 	•	Custom implementation uses the global environ variable directly.
 	•	Properly handles empty or missing PATH values.
 
 ⸻
 
-✅ Allowed Functions
+Allowed Functions
 
 access, chdir, close, closedir, execve, exit, _exit, fflush, fork, free,
 getcwd, getline, getpid, isatty, kill, malloc, open, opendir, perror,
@@ -181,7 +174,7 @@ wait3, wait4, write, strdup, strlen, strcmp, strncmp, sprintf
 
 ⸻
 
-🧪 Testing
+Testing
 
 Manual Testing
 
@@ -210,7 +203,7 @@ betty *.c *.h
 
 ⸻
 
-🧾 Requirements
+Requirements
 	•	OS: Ubuntu 20.04 LTS
 	•	Compiler: gcc 9.4.0 or later
 	•	Standard: -std=gnu89
@@ -218,7 +211,7 @@ betty *.c *.h
 
 ⸻
 
-📚 Project Information
+Project Information
 	•	Project: 0x16. C - Simple Shell
 	•	Language: C
 	•	School: Holberton School
@@ -226,7 +219,7 @@ betty *.c *.h
 
 ⸻
 
-⚠️ License
+License
 
 This project is part of the Holberton School curriculum.
 It was created for educational purposes and is not intended for production use.
