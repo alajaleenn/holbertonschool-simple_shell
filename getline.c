@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+#include <stdlib.h>
 
 #define BUFFER_SIZE 1024
 
@@ -25,10 +27,6 @@ char *_getline(void)
         }
 
         c = buffer[buf_pos++];
-
-        /* Skip leading spaces and tabs if line is empty */
-        if (line_size == 0 && (c == ' ' || c == '\t'))
-            continue;
 
         line = realloc(line, line_size + 2);
         if (!line)
