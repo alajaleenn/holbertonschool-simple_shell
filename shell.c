@@ -18,12 +18,20 @@ void display_prompt(void)
 	*/
 char *read_line(void)
 {
-	char *line;
+	char *line = NULL;
+	size_t bufsize = 0;
+	ssize_t nread;
 
-    	line = _getline();
-    if (!line)
+	nread = getline(&line, &bufsize, stdin);
+	if (nread == -1)
+	{
+	free(line);
 	return (NULL);
-    	
+	}
+
+	if (line[nread - 1] == '\n')
+	line[nread - 1] = '\0';
+
 	return (line);
 }
 

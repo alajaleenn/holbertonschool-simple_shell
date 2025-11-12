@@ -19,7 +19,7 @@ void display_prompt(void);
 char *read_line(void);
 char **parse_line(char *line);
 void free_array(char **array);
-char *_getline(void);
+
 
 /* Path and execution functions */
 char *get_path_env(void);
