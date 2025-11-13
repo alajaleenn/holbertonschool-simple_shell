@@ -66,4 +66,3 @@ int execute_command(char **args, char *argv0, char *line, int last_status)
 
 	return (fork_and_execute(command_path, args, argv0));
 }
-/**/
